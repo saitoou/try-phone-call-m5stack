@@ -1,0 +1,17 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "bt_hfp.c"
+        "audio_codec.c"
+        "audio_route.c"
+        "cvsd_codec.c"
+        "recorder.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        bt
+        esp_driver_i2c
+        esp_driver_i2s
+        esp_ringbuf
+        nvs_flash
+)
